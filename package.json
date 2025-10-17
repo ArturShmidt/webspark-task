@@ -1,0 +1,20 @@
+{
+  "name": "webspark",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "sass src/scss/main.scss src/css/styles.css",
+    "watch-css": "sass --watch src/scss/main.scss src/css/styles.css"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@eslint/js": "^9.37.0",
+    "eslint": "^9.37.0",
+    "globals": "^16.4.0",
+    "sass": "^1.93.2"
+  }
+}

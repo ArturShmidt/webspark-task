@@ -1,0 +1,978 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile Page</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Montserrat:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css"
+    />
+    <!-- Підключення стилів Flatpickr -->
+    <link rel="stylesheet" href="src/css/styles.css" />
+    <!-- Ваші стилі -->
+  </head>
+  <body>
+    <img src="src/assets/img/Vector1.svg" alt="Vector Image" class="vector-1" />
+    <img src="src/assets/img/Vector2.svg" alt="Vector Image" class="vector-2" />
+    <div class="global-container">
+      <header class="header">
+        <div class="header-logo">
+          <img
+            src="src/assets/img/Logo.svg"
+            alt="Logo"
+            class="header-logo-img"
+          />
+        </div>
+        <div class="header-profile">
+          <div class="header-profile-info">
+            <h1 class="profile-info-title">monblanproject</h1>
+            <span class="profile-info-start-on">Start on 17-02-2016</span>
+          </div>
+          <div class="header-profile-stats">
+            <span class="profile-stats-text"
+              ><span class="profile-stats-text-bold">870</span> post</span
+            >
+            <span class="profile-stats-text"
+              ><span
+                class="profile-stats-text-bold profile-stats-text-bold-padding"
+                >11,787</span
+              >
+              followers</span
+            >
+            <span class="profile-stats-text"
+              ><span class="profile-stats-text-bold">112</span> following</span
+            >
+          </div>
+          <div class="date">
+            <span class="date-title">Date</span>
+            <div class="datepicker">
+              <input
+                type="text"
+                id="date-start"
+                class="datepicker__input"
+                placeholder="From"
+              />
+              <button type="button" class="datepicker__clear" data-clear>
+                <img
+                  src="src/assets/img/close.svg"
+                  alt="Logo"
+                  class="close-icon"
+                />
+              </button>
+              <button type="button" class="datepicker__calendar">
+                <img
+                  src="src/assets/img/calendar.svg"
+                  alt="Logo"
+                  class="calendar-icon"
+                />
+              </button>
+            </div>
+            <div class="datepicker">
+              <input
+                type="text"
+                id="date-end"
+                class="datepicker__input"
+                placeholder="To"
+              />
+              <button type="button" class="datepicker__clear" data-clear>
+                <img
+                  src="src/assets/img/close.svg"
+                  alt="Logo"
+                  class="close-icon"
+                />
+              </button>
+              <button type="button" class="datepicker__calendar">
+                <img
+                  src="src/assets/img/calendar.svg"
+                  alt="Logo"
+                  class="calendar-icon"
+                />
+              </button>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <main class="content">
+        <div class="buttons">
+          <button id="toggle-view" class="toggle-btn">
+            <div class="toggle-btn-block"></div>
+            <div class="toggle-btn-block"></div>
+            <div class="toggle-btn-block"></div>
+            <div class="toggle-btn-block"></div>
+            <div class="toggle-btn-block"></div>
+            <div class="toggle-btn-block"></div>
+            <div class="toggle-btn-block"></div>
+            <div class="toggle-btn-block"></div>
+            <div class="toggle-btn-block"></div>
+          </button>
+          <button class="grid-btn">
+            <img src="src/assets/img/Grid.svg" alt="grid-button img" />
+          </button>
+        </div>
+        <div class="containers">
+          <div class="cards-container-flex">
+            <img
+              src="src/assets/img/Photo1.png"
+              alt="rard-photo1"
+              class="flex-photo"
+            />
+            <div class="flex-title">
+              <div class="title-today">
+                <h3 class="flex-title-text">Today</h3>
+                <div class="under-title-text">
+                  <img
+                    src="src/assets/img/Heart.svg"
+                    alt="heart icon"
+                    class="under-title-text-icon"
+                  />
+                  <p class="under-title-text-mg-18">128</p>
+                  <img
+                    src="src/assets/img/Massage.svg"
+                    alt="massage icon"
+                    class="under-title-text-icon"
+                  />
+                  <p>31</p>
+                </div>
+              </div>
+              <div class="9-08-date">
+                <h3 class="flex-title-text">9-08-2016</h3>
+                <div class="under-title-text">
+                  <img
+                    src="src/assets/img/Heart.svg"
+                    alt="heart icon"
+                    class="under-title-text-icon"
+                  />
+                  <p class="under-title-text-mg-26">67</p>
+                  <img
+                    src="src/assets/img/Massage.svg"
+                    alt="massage icon"
+                    class="under-title-text-icon"
+                  />
+                  <p>22</p>
+                </div>
+              </div>
+              <div class="upload">
+                <h3 class="flex-title-text">Image upload</h3>
+                <p>11-04-2016</p>
+              </div>
+            </div>
+          </div>
+          <div class="cards-container-flex">
+            <img
+              src="src/assets/img/Photo2.png"
+              alt="rard-photo1"
+              class="flex-photo"
+            />
+            <div class="flex-title">
+              <div class="title-today">
+                <h3 class="flex-title-text">Today</h3>
+                <div class="under-title-text">
+                  <img
+                    src="src/assets/img/Heart.svg"
+                    alt="heart icon"
+                    class="under-title-text-icon"
+                  />
+                  <p class="under-title-text-mg-18">128</p>
+                  <img
+                    src="src/assets/img/Massage.svg"
+                    alt="massage icon"
+                    class="under-title-text-icon"
+                  />
+                  <p>31</p>
+                </div>
+              </div>
+              <div class="9-08-date">
+                <h3 class="flex-title-text">9-08-2016</h3>
+                <div class="under-title-text">
+                  <img
+                    src="src/assets/img/Heart.svg"
+                    alt="heart icon"
+                    class="under-title-text-icon"
+                  />
+                  <p class="under-title-text-mg-26">67</p>
+                  <img
+                    src="src/assets/img/Massage.svg"
+                    alt="massage icon"
+                    class="under-title-text-icon"
+                  />
+                  <p>22</p>
+                </div>
+              </div>
+              <div class="upload">
+                <h3 class="flex-title-text">Image upload</h3>
+                <p>11-04-2016</p>
+              </div>
+            </div>
+          </div>
+          <div class="cards-container-flex">
+            <img
+              src="src/assets/img/Photo3.png"
+              alt="rard-photo1"
+              class="flex-photo"
+            />
+            <div class="flex-title">
+              <div class="title-today">
+                <h3 class="flex-title-text">Today</h3>
+                <div class="under-title-text">
+                  <img
+                    src="src/assets/img/Heart.svg"
+                    alt="heart icon"
+                    class="under-title-text-icon"
+                  />
+                  <p class="under-title-text-mg-18">128</p>
+                  <img
+                    src="src/assets/img/Massage.svg"
+                    alt="massage icon"
+                    class="under-title-text-icon"
+                  />
+                  <p>31</p>
+                </div>
+              </div>
+              <div class="9-08-date">
+                <h3 class="flex-title-text">9-08-2016</h3>
+                <div class="under-title-text">
+                  <img
+                    src="src/assets/img/Heart.svg"
+                    alt="heart icon"
+                    class="under-title-text-icon"
+                  />
+                  <p class="under-title-text-mg-26">67</p>
+                  <img
+                    src="src/assets/img/Massage.svg"
+                    alt="massage icon"
+                    class="under-title-text-icon"
+                  />
+                  <p>22</p>
+                </div>
+              </div>
+              <div class="upload">
+                <h3 class="flex-title-text">Image upload</h3>
+                <p>11-04-2016</p>
+              </div>
+            </div>
+          </div>
+          <div class="cards-container-flex">
+            <img
+              src="src/assets/img/Photo4.png"
+              alt="rard-photo1"
+              class="flex-photo"
+            />
+            <div class="flex-title">
+              <div class="title-today">
+                <h3 class="flex-title-text">Today</h3>
+                <div class="under-title-text">
+                  <img
+                    src="src/assets/img/Heart.svg"
+                    alt="heart icon"
+                    class="under-title-text-icon"
+                  />
+                  <p class="under-title-text-mg-18">128</p>
+                  <img
+                    src="src/assets/img/Massage.svg"
+                    alt="massage icon"
+                    class="under-title-text-icon"
+                  />
+                  <p>31</p>
+                </div>
+              </div>
+              <div class="9-08-date">
+                <h3 class="flex-title-text">9-08-2016</h3>
+                <div class="under-title-text">
+                  <img
+                    src="src/assets/img/Heart.svg"
+                    alt="heart icon"
+                    class="under-title-text-icon"
+                  />
+                  <p class="under-title-text-mg-26">67</p>
+                  <img
+                    src="src/assets/img/Massage.svg"
+                    alt="massage icon"
+                    class="under-title-text-icon"
+                  />
+                  <p>22</p>
+                </div>
+              </div>
+              <div class="upload">
+                <h3 class="flex-title-text">Image upload</h3>
+                <p>11-04-2016</p>
+              </div>
+            </div>
+          </div>
+          <div class="cards-container-flex">
+            <img
+              src="src/assets/img/Photo5.png"
+              alt="rard-photo1"
+              class="flex-photo"
+            />
+            <div class="flex-title">
+              <div class="title-today">
+                <h3 class="flex-title-text">Today</h3>
+                <div class="under-title-text">
+                  <img
+                    src="src/assets/img/Heart.svg"
+                    alt="heart icon"
+                    class="under-title-text-icon"
+                  />
+                  <p class="under-title-text-mg-18">128</p>
+                  <img
+                    src="src/assets/img/Massage.svg"
+                    alt="massage icon"
+                    class="under-title-text-icon"
+                  />
+                  <p>31</p>
+                </div>
+              </div>
+              <div class="9-08-date">
+                <h3 class="flex-title-text">9-08-2016</h3>
+                <div class="under-title-text">
+                  <img
+                    src="src/assets/img/Heart.svg"
+                    alt="heart icon"
+                    class="under-title-text-icon"
+                  />
+                  <p class="under-title-text-mg-26">67</p>
+                  <img
+                    src="src/assets/img/Massage.svg"
+                    alt="massage icon"
+                    class="under-title-text-icon"
+                  />
+                  <p>22</p>
+                </div>
+              </div>
+              <div class="upload">
+                <h3 class="flex-title-text">Image upload</h3>
+                <p>11-04-2016</p>
+              </div>
+            </div>
+          </div>
+          <div class="cards-container-flex">
+            <img
+              src="src/assets/img/Photo6.png"
+              alt="rard-photo1"
+              class="flex-photo"
+            />
+            <div class="flex-title">
+              <div class="title-today">
+                <h3 class="flex-title-text">Today</h3>
+                <div class="under-title-text">
+                  <img
+                    src="src/assets/img/Heart.svg"
+                    alt="heart icon"
+                    class="under-title-text-icon"
+                  />
+                  <p class="under-title-text-mg-18">128</p>
+                  <img
+                    src="src/assets/img/Massage.svg"
+                    alt="massage icon"
+                    class="under-title-text-icon"
+                  />
+                  <p>31</p>
+                </div>
+              </div>
+              <div class="9-08-date">
+                <h3 class="flex-title-text">9-08-2016</h3>
+                <div class="under-title-text">
+                  <img
+                    src="src/assets/img/Heart.svg"
+                    alt="heart icon"
+                    class="under-title-text-icon"
+                  />
+                  <p class="under-title-text-mg-26">67</p>
+                  <img
+                    src="src/assets/img/Massage.svg"
+                    alt="massage icon"
+                    class="under-title-text-icon"
+                  />
+                  <p>22</p>
+                </div>
+              </div>
+              <div class="upload">
+                <h3 class="flex-title-text">Image upload</h3>
+                <p>11-04-2016</p>
+              </div>
+            </div>
+          </div>
+          <div class="cards-container-flex">
+            <img
+              src="src/assets/img/Photo7.png"
+              alt="rard-photo1"
+              class="flex-photo"
+            />
+            <div class="flex-title">
+              <div class="title-today">
+                <h3 class="flex-title-text">Today</h3>
+                <div class="under-title-text">
+                  <img
+                    src="src/assets/img/Heart.svg"
+                    alt="heart icon"
+                    class="under-title-text-icon"
+                  />
+                  <p class="under-title-text-mg-18">128</p>
+                  <img
+                    src="src/assets/img/Massage.svg"
+                    alt="massage icon"
+                    class="under-title-text-icon"
+                  />
+                  <p>31</p>
+                </div>
+              </div>
+              <div class="9-08-date">
+                <h3 class="flex-title-text">9-08-2016</h3>
+                <div class="under-title-text">
+                  <img
+                    src="src/assets/img/Heart.svg"
+                    alt="heart icon"
+                    class="under-title-text-icon"
+                  />
+                  <p class="under-title-text-mg-26">67</p>
+                  <img
+                    src="src/assets/img/Massage.svg"
+                    alt="massage icon"
+                    class="under-title-text-icon"
+                  />
+                  <p>22</p>
+                </div>
+              </div>
+              <div class="upload">
+                <h3 class="flex-title-text">Image upload</h3>
+                <p>11-04-2016</p>
+              </div>
+            </div>
+          </div>
+          <div class="cards-container-flex">
+            <img
+              src="src/assets/img/Photo8.png"
+              alt="rard-photo1"
+              class="flex-photo"
+            />
+            <div class="flex-title">
+              <div class="title-today">
+                <h3 class="flex-title-text">Today</h3>
+                <div class="under-title-text">
+                  <img
+                    src="src/assets/img/Heart.svg"
+                    alt="heart icon"
+                    class="under-title-text-icon"
+                  />
+                  <p class="under-title-text-mg-18">128</p>
+                  <img
+                    src="src/assets/img/Massage.svg"
+                    alt="massage icon"
+                    class="under-title-text-icon"
+                  />
+                  <p>31</p>
+                </div>
+              </div>
+              <div class="9-08-date">
+                <h3 class="flex-title-text">9-08-2016</h3>
+                <div class="under-title-text">
+                  <img
+                    src="src/assets/img/Heart.svg"
+                    alt="heart icon"
+                    class="under-title-text-icon"
+                  />
+                  <p class="under-title-text-mg-26">67</p>
+                  <img
+                    src="src/assets/img/Massage.svg"
+                    alt="massage icon"
+                    class="under-title-text-icon"
+                  />
+                  <p>22</p>
+                </div>
+              </div>
+              <div class="upload">
+                <h3 class="flex-title-text">Image upload</h3>
+                <p>11-04-2016</p>
+              </div>
+            </div>
+          </div>
+          <div class="cards-container-flex">
+            <img
+              src="src/assets/img/Photo9.png"
+              alt="rard-photo1"
+              class="flex-photo"
+            />
+            <div class="flex-title">
+              <div class="title-today">
+                <h3 class="flex-title-text">Today</h3>
+                <div class="under-title-text">
+                  <img
+                    src="src/assets/img/Heart.svg"
+                    alt="heart icon"
+                    class="under-title-text-icon"
+                  />
+                  <p class="under-title-text-mg-18">128</p>
+                  <img
+                    src="src/assets/img/Massage.svg"
+                    alt="massage icon"
+                    class="under-title-text-icon"
+                  />
+                  <p>31</p>
+                </div>
+              </div>
+              <div class="9-08-date">
+                <h3 class="flex-title-text">9-08-2016</h3>
+                <div class="under-title-text">
+                  <img
+                    src="src/assets/img/Heart.svg"
+                    alt="heart icon"
+                    class="under-title-text-icon"
+                  />
+                  <p class="under-title-text-mg-26">67</p>
+                  <img
+                    src="src/assets/img/Massage.svg"
+                    alt="massage icon"
+                    class="under-title-text-icon"
+                  />
+                  <p>22</p>
+                </div>
+              </div>
+              <div class="upload">
+                <h3 class="flex-title-text">Image upload</h3>
+                <p>11-04-2016</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="containers-grid">
+          <div class="cards-container-grid">
+            <img
+              src="src/assets/img/Photo10.png"
+              alt="rard-photo1"
+              class="grid-photo"
+            />
+            <div class="grid-title">
+              <div class="flex-title">
+                <div class="title-today">
+                  <h3 class="flex-title-text">Today</h3>
+                  <div class="under-title-text-grid">
+                    <img
+                      src="src/assets/img/Heart.svg"
+                      alt="heart icon"
+                      class="under-title-text-icon"
+                    />
+                    <p class="under-title-text-mg-26">128</p>
+                  </div>
+                  <div class="under-title-text-grid">
+                    <img
+                      src="src/assets/img/Massage.svg"
+                      alt="massage icon"
+                      class="under-title-text-icon"
+                    />
+                    <p>31</p>
+                  </div>
+                </div>
+                <div class="9-08">
+                  <h3 class="flex-title-text">9-08-2016</h3>
+                  <div class="under-title-text-grid">
+                    <img
+                      src="src/assets/img/Heart.svg"
+                      alt="heart icon"
+                      class="under-title-text-icon"
+                    />
+                    <p class="under-title-text-mg-26">67</p>
+                  </div>
+                  <div class="under-title-text-grid">
+                    <img
+                      src="src/assets/img/Massage.svg"
+                      alt="massage icon"
+                      class="under-title-text-icon"
+                    />
+                    <p>22</p>
+                  </div>
+                </div>
+              </div>
+              <div class="upload-grid">
+                <h3 class="flex-title-text">Image upload</h3>
+                <p>11-04-2016</p>
+              </div>
+            </div>
+          </div>
+          <div class="cards-container-grid">
+            <img
+              src="src/assets/img/Photo11.png"
+              alt="rard-photo1"
+              class="grid-photo"
+            />
+            <div class="grid-title">
+              <div class="flex-title">
+                <div class="title-today">
+                  <h3 class="flex-title-text">Today</h3>
+                  <div class="under-title-text-grid">
+                    <img
+                      src="src/assets/img/Heart.svg"
+                      alt="heart icon"
+                      class="under-title-text-icon"
+                    />
+                    <p class="under-title-text-mg-26">128</p>
+                  </div>
+                  <div class="under-title-text-grid">
+                    <img
+                      src="src/assets/img/Massage.svg"
+                      alt="massage icon"
+                      class="under-title-text-icon"
+                    />
+                    <p>31</p>
+                  </div>
+                </div>
+                <div class="9-08">
+                  <h3 class="flex-title-text">9-08-2016</h3>
+                  <div class="under-title-text-grid">
+                    <img
+                      src="src/assets/img/Heart.svg"
+                      alt="heart icon"
+                      class="under-title-text-icon"
+                    />
+                    <p class="under-title-text-mg-26">67</p>
+                  </div>
+                  <div class="under-title-text-grid">
+                    <img
+                      src="src/assets/img/Massage.svg"
+                      alt="massage icon"
+                      class="under-title-text-icon"
+                    />
+                    <p>22</p>
+                  </div>
+                </div>
+              </div>
+              <div class="upload-grid">
+                <h3 class="flex-title-text">Image upload</h3>
+                <p>11-04-2016</p>
+              </div>
+            </div>
+          </div>
+          <div class="cards-container-grid">
+            <img
+              src="src/assets/img/Photo12.png"
+              alt="rard-photo1"
+              class="grid-photo"
+            />
+            <div class="grid-title">
+              <div class="flex-title">
+                <div class="title-today">
+                  <h3 class="flex-title-text">Today</h3>
+                  <div class="under-title-text-grid">
+                    <img
+                      src="src/assets/img/Heart.svg"
+                      alt="heart icon"
+                      class="under-title-text-icon"
+                    />
+                    <p class="under-title-text-mg-26">128</p>
+                  </div>
+                  <div class="under-title-text-grid">
+                    <img
+                      src="src/assets/img/Massage.svg"
+                      alt="massage icon"
+                      class="under-title-text-icon"
+                    />
+                    <p>31</p>
+                  </div>
+                </div>
+                <div class="9-08">
+                  <h3 class="flex-title-text">9-08-2016</h3>
+                  <div class="under-title-text-grid">
+                    <img
+                      src="src/assets/img/Heart.svg"
+                      alt="heart icon"
+                      class="under-title-text-icon"
+                    />
+                    <p class="under-title-text-mg-26">67</p>
+                  </div>
+                  <div class="under-title-text-grid">
+                    <img
+                      src="src/assets/img/Massage.svg"
+                      alt="massage icon"
+                      class="under-title-text-icon"
+                    />
+                    <p>22</p>
+                  </div>
+                </div>
+              </div>
+              <div class="upload-grid">
+                <h3 class="flex-title-text">Image upload</h3>
+                <p>11-04-2016</p>
+              </div>
+            </div>
+          </div>
+          <div class="cards-container-grid">
+            <img
+              src="src/assets/img/Photo13.png"
+              alt="rard-photo1"
+              class="grid-photo"
+            />
+            <div class="grid-title">
+              <div class="flex-title">
+                <div class="title-today">
+                  <h3 class="flex-title-text">Today</h3>
+                  <div class="under-title-text-grid">
+                    <img
+                      src="src/assets/img/Heart.svg"
+                      alt="heart icon"
+                      class="under-title-text-icon"
+                    />
+                    <p class="under-title-text-mg-26">128</p>
+                  </div>
+                  <div class="under-title-text-grid">
+                    <img
+                      src="src/assets/img/Massage.svg"
+                      alt="massage icon"
+                      class="under-title-text-icon"
+                    />
+                    <p>31</p>
+                  </div>
+                </div>
+                <div class="9-08">
+                  <h3 class="flex-title-text">9-08-2016</h3>
+                  <div class="under-title-text-grid">
+                    <img
+                      src="src/assets/img/Heart.svg"
+                      alt="heart icon"
+                      class="under-title-text-icon"
+                    />
+                    <p class="under-title-text-mg-26">67</p>
+                  </div>
+                  <div class="under-title-text-grid">
+                    <img
+                      src="src/assets/img/Massage.svg"
+                      alt="massage icon"
+                      class="under-title-text-icon"
+                    />
+                    <p>22</p>
+                  </div>
+                </div>
+              </div>
+              <div class="upload-grid">
+                <h3 class="flex-title-text">Image upload</h3>
+                <p>11-04-2016</p>
+              </div>
+            </div>
+          </div>
+          <div class="cards-container-grid">
+            <img
+              src="src/assets/img/Photo14.png"
+              alt="rard-photo1"
+              class="grid-photo"
+            />
+            <div class="grid-title">
+              <div class="flex-title">
+                <div class="title-today">
+                  <h3 class="flex-title-text">Today</h3>
+                  <div class="under-title-text-grid">
+                    <img
+                      src="src/assets/img/Heart.svg"
+                      alt="heart icon"
+                      class="under-title-text-icon"
+                    />
+                    <p class="under-title-text-mg-26">128</p>
+                  </div>
+                  <div class="under-title-text-grid">
+                    <img
+                      src="src/assets/img/Massage.svg"
+                      alt="massage icon"
+                      class="under-title-text-icon"
+                    />
+                    <p>31</p>
+                  </div>
+                </div>
+                <div class="9-08">
+                  <h3 class="flex-title-text">9-08-2016</h3>
+                  <div class="under-title-text-grid">
+                    <img
+                      src="src/assets/img/Heart.svg"
+                      alt="heart icon"
+                      class="under-title-text-icon"
+                    />
+                    <p class="under-title-text-mg-26">67</p>
+                  </div>
+                  <div class="under-title-text-grid">
+                    <img
+                      src="src/assets/img/Massage.svg"
+                      alt="massage icon"
+                      class="under-title-text-icon"
+                    />
+                    <p>22</p>
+                  </div>
+                </div>
+              </div>
+              <div class="upload-grid">
+                <h3 class="flex-title-text">Image upload</h3>
+                <p>11-04-2016</p>
+              </div>
+            </div>
+          </div>
+          <div class="cards-container-grid">
+            <img
+              src="src/assets/img/Photo15.png"
+              alt="rard-photo1"
+              class="grid-photo"
+            />
+            <div class="grid-title">
+              <div class="flex-title">
+                <div class="title-today">
+                  <h3 class="flex-title-text">Today</h3>
+                  <div class="under-title-text-grid">
+                    <img
+                      src="src/assets/img/Heart.svg"
+                      alt="heart icon"
+                      class="under-title-text-icon"
+                    />
+                    <p class="under-title-text-mg-26">128</p>
+                  </div>
+                  <div class="under-title-text-grid">
+                    <img
+                      src="src/assets/img/Massage.svg"
+                      alt="massage icon"
+                      class="under-title-text-icon"
+                    />
+                    <p>31</p>
+                  </div>
+                </div>
+                <div class="9-08">
+                  <h3 class="flex-title-text">9-08-2016</h3>
+                  <div class="under-title-text-grid">
+                    <img
+                      src="src/assets/img/Heart.svg"
+                      alt="heart icon"
+                      class="under-title-text-icon"
+                    />
+                    <p class="under-title-text-mg-26">67</p>
+                  </div>
+                  <div class="under-title-text-grid">
+                    <img
+                      src="src/assets/img/Massage.svg"
+                      alt="massage icon"
+                      class="under-title-text-icon"
+                    />
+                    <p>22</p>
+                  </div>
+                </div>
+              </div>
+              <div class="upload-grid">
+                <h3 class="flex-title-text">Image upload</h3>
+                <p>11-04-2016</p>
+              </div>
+            </div>
+          </div>
+          <div class="cards-container-grid">
+            <img
+              src="src/assets/img/Photo16.png"
+              alt="rard-photo1"
+              class="grid-photo"
+            />
+            <div class="grid-title">
+              <div class="flex-title">
+                <div class="title-today">
+                  <h3 class="flex-title-text">Today</h3>
+                  <div class="under-title-text-grid">
+                    <img
+                      src="src/assets/img/Heart.svg"
+                      alt="heart icon"
+                      class="under-title-text-icon"
+                    />
+                    <p class="under-title-text-mg-26">128</p>
+                  </div>
+                  <div class="under-title-text-grid">
+                    <img
+                      src="src/assets/img/Massage.svg"
+                      alt="massage icon"
+                      class="under-title-text-icon"
+                    />
+                    <p>31</p>
+                  </div>
+                </div>
+                <div class="9-08">
+                  <h3 class="flex-title-text">9-08-2016</h3>
+                  <div class="under-title-text-grid">
+                    <img
+                      src="src/assets/img/Heart.svg"
+                      alt="heart icon"
+                      class="under-title-text-icon"
+                    />
+                    <p class="under-title-text-mg-26">67</p>
+                  </div>
+                  <div class="under-title-text-grid">
+                    <img
+                      src="src/assets/img/Massage.svg"
+                      alt="massage icon"
+                      class="under-title-text-icon"
+                    />
+                    <p>22</p>
+                  </div>
+                </div>
+              </div>
+              <div class="upload-grid">
+                <h3 class="flex-title-text">Image upload</h3>
+                <p>11-04-2016</p>
+              </div>
+            </div>
+          </div>
+          <div class="cards-container-grid">
+            <img
+              src="src/assets/img/Photo17.png"
+              alt="rard-photo1"
+              class="grid-photo"
+            />
+            <div class="grid-title">
+              <div class="flex-title">
+                <div class="title-today">
+                  <h3 class="flex-title-text">Today</h3>
+                  <div class="under-title-text-grid">
+                    <img
+                      src="src/assets/img/Heart.svg"
+                      alt="heart icon"
+                      class="under-title-text-icon"
+                    />
+                    <p class="under-title-text-mg-26">128</p>
+                  </div>
+                  <div class="under-title-text-grid">
+                    <img
+                      src="src/assets/img/Massage.svg"
+                      alt="massage icon"
+                      class="under-title-text-icon"
+                    />
+                    <p>31</p>
+                  </div>
+                </div>
+                <div class="9-08">
+                  <h3 class="flex-title-text">9-08-2016</h3>
+                  <div class="under-title-text-grid">
+                    <img
+                      src="src/assets/img/Heart.svg"
+                      alt="heart icon"
+                      class="under-title-text-icon"
+                    />
+                    <p class="under-title-text-mg-26">67</p>
+                  </div>
+                  <div class="under-title-text-grid">
+                    <img
+                      src="src/assets/img/Massage.svg"
+                      alt="massage icon"
+                      class="under-title-text-icon"
+                    />
+                    <p>22</p>
+                  </div>
+                </div>
+              </div>
+              <div class="upload-grid">
+                <h3 class="flex-title-text">Image upload</h3>
+                <p>11-04-2016</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="load-more">LOAD MORE</div>
+      </main>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <!-- Підключення Flatpickr -->
+    <script src="src/js/main.js"></script>
+    <!-- Ваш JavaScript -->
+  </body>
+</html>
