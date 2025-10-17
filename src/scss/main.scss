@@ -1,4 +1,4 @@
-// Variables
+
 $font-family-base: "Roboto", sans-serif;
 $font-weight-base: 500;
 $color-border: #ccc;
@@ -8,7 +8,6 @@ $border-radius: 4px;
 $input-width: 102px;
 $icon-size: 20px;
 
-// Загальні стилі
 body {
   position: relative;
   font-family: $font-family-base;
@@ -96,7 +95,6 @@ body {
   }
 }
 
-// Головний контейнер для датапікера
 .datepicker {
   $self: &;
   position: relative;
@@ -107,12 +105,11 @@ body {
     display: block;
   }
 
-  // Інпут
   &__input {
     height: 10px;
     width: $input-width;
     padding: $spacing-base;
-    padding-right: $spacing-base * 6; // Місце для іконок
+    padding-right: $spacing-base * 6;
     border: 1px solid $color-border;
     border-radius: $border-radius;
     font-family: inherit;
@@ -127,7 +124,6 @@ body {
     }
   }
 
-  // Базові стилі для іконок
   &__clear,
   &__calendar {
     cursor: pointer;
@@ -152,17 +148,14 @@ body {
     }
   }
 
-  // Кнопка очищення
   &__clear {
     right: 26px;
   }
 
-  // Кнопка календаря
   &__calendar {
     right: 0;
   }
 
-  // Стилі для Flatpickr
   .flatpickr-input {
     padding-right: $spacing-base * 6.25;
   }
