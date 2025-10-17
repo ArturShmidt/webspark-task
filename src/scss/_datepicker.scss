@@ -1,0 +1,82 @@
+.date {
+  font-weight: 400;
+  font-size: 16px;
+
+  &-title {
+    margin-right: 11px;
+  }
+}
+
+.datepicker {
+  position: relative;
+  display: inline-block;
+  margin-right: 24px;
+
+  &__input {
+    height: 10px;
+    width: $input-width;
+    padding: $spacing-base;
+    padding-right: $spacing-base * 6;
+    border: 1px solid $color-border;
+    border-radius: $border-radius;
+    font-family: inherit;
+    &:focus {
+      outline: none;
+      border-color: red;
+    }
+  }
+
+  &__clear,
+  &__calendar {
+    cursor: pointer;
+    width: 28px;
+    height: 28px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #c8c7c7;
+    border: 1px solid #dedede;
+    box-sizing: border-box;
+    padding: 0;
+    img {
+      width: 16px;
+      height: 16px;
+      display: block;
+    }
+  }
+
+  &__clear {
+    right: 26px;
+  }
+
+  &__calendar {
+    right: 0;
+  }
+
+  .flatpickr-input {
+    padding-right: $spacing-base * 6.25;
+  }
+
+  @media (max-width: 676px) {
+    display: block;
+    &__input {
+      width: 100%;
+      min-width: 0;
+      padding-right: 60px;
+    }
+    &__clear {
+      right: 40px;
+      width: 24px;
+      height: 24px;
+    }
+    &__calendar {
+      right: 8px;
+      width: 24px;
+      height: 24px;
+    }
+  }
+}

@@ -1,0 +1,14 @@
+body {
+  position: relative;
+  font-family: $font-family-base;
+  font-weight: $font-weight-base;
+  margin: 0;
+  padding: 0;
+}
+
+.global-container {
+  box-sizing: border-box;
+  max-width: 836px;
+  margin: 0 auto;
+  padding: 0;
+}

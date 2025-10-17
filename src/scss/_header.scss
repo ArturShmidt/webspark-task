@@ -1,0 +1,76 @@
+.header {
+  display: flex;
+  padding-top: 6px;
+  gap: 90px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+
+  @media (max-width: 900px) {
+    gap: 10px;
+    justify-content: center;
+  }
+
+  &-logo {
+    margin-left: 20%;
+    max-width: 138px;
+    width: 100%;
+    margin-bottom: 28px;
+
+    @media (max-width: 900px) {
+      margin-left: 2%;
+    }
+
+    @media (max-width: 676px) {
+      display: none;
+    }
+  }
+
+  &-profile {
+    &-info {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+
+      @media (max-width: 676px) {
+        flex-wrap: wrap;
+        h1 {
+          margin: 0;
+        }
+      }
+    }
+  }
+}
+
+.profile-info-title {
+  font-family: "Montserrat", sans-serif;
+  font-size: 24px;
+  letter-spacing: -1%;
+  font-weight: 500;
+}
+
+.profile-info-start-on {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 28px;
+  width: 135px;
+  font-size: 13px;
+  font-weight: 400;
+  letter-spacing: -3%;
+  color: #3d8eda;
+  border: #3d8eda 1px solid;
+  border-radius: 2px;
+}
+
+.header-profile-stats {
+  font-size: 14px;
+  margin-bottom: 19px;
+}
+
+.profile-stats-text-bold {
+  font-weight: 700;
+
+  &-padding {
+    padding-right: 17px;
+    padding-left: 28px;
+  }
+}
